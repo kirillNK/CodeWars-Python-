@@ -14,9 +14,7 @@ Link: https://www.codewars.com/kata/5467e4d82edf8bbf40000155/train/python
 
 
 def Descending_Order(num):
-    num = sorted(str(num), reverse=True)
-    num = "".join(str(x) for x in num)
-    return int(num)
+    return int("".join(str(x) for x in (sorted(str(num), reverse=True))))
 
 
 Descending_Order(145263)
