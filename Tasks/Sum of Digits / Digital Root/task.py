@@ -36,12 +36,16 @@ Link: https://www.codewars.com/kata/541c8630095125aba6000c00/train/python
 def digital_root(n):
     totalSum = 0
     intLength = str(n)
+
     for item in intLength:
+        print(f"{item} {'+ '}", end="")
         totalSum += int(item)
+
     if len(str(totalSum)) == 1:
+        print(totalSum)
         return totalSum
     else:
-        digital_root(totalSum)
+        return digital_root(totalSum)
 
 
-print(digital_root(942))
+print(digital_root(493193))
